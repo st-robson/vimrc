@@ -8,8 +8,11 @@ set ruler
 set wildmenu
 set mouse=a
 set background=dark
+set clipboard=unnamedplus
 
 syntax enable
+vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+map <C-v> :r ~/.vimbuffer<CR>
 
 " Download plug.vim and put it in ~/.vim/autoload
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -19,6 +22,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'posva/vim-vue'
 
 call plug#end()
 autocmd VimEnter *
