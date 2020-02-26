@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
+Plug 'sirver/ultisnips'
 
 call plug#end()
 autocmd VimEnter *
