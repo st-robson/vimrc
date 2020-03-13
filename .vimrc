@@ -9,6 +9,9 @@ set wildmenu
 set mouse=a
 set background=dark
 set clipboard=unnamedplus
+set noshowmode
+set noshowcmd
+set shortmess+=F
 
 syntax enable
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
