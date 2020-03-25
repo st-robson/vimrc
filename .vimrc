@@ -12,6 +12,7 @@ set clipboard=unnamedplus
 set noshowmode
 set noshowcmd
 set shortmess+=F
+set cursorline
 
 syntax enable
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
